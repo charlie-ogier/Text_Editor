@@ -1,0 +1,61 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,66,47)
+  Text = ("Text editor")
+  Arrangement = Arrange.Vertical
+  Padding = 5
+  { HBox2 HBox
+    MoveScaled(0,0,63,4)
+    { ToolButtonOpen ToolButton
+      MoveScaled(0,0,4,4)
+      ToolTip = ("Open a file..")
+      Picture = Picture["icon:/huge/open"]
+    }
+    { Panel5 Panel
+      MoveScaled(6,0,1,3)
+    }
+    { ToolButtonSaveAs ToolButton
+      MoveScaled(8,0,4,4)
+      ToolTip = ("Save as..")
+      Picture = Picture["icon:/huge/save-as"]
+    }
+    { Panel4 Panel
+      MoveScaled(13,0,1,3)
+    }
+    { ToolButtonCopy ToolButton
+      MoveScaled(15,0,4,4)
+      ToolTip = ("Copy")
+      Picture = Picture["icon:/huge/copy"]
+    }
+    { Panel3 Panel
+      MoveScaled(20,0,1,3)
+    }
+    { ToolButtonPaste ToolButton
+      MoveScaled(23,0,4,4)
+      ToolTip = ("Paste")
+      Picture = Picture["icon:/huge/paste"]
+    }
+    { Panel2 Panel
+      MoveScaled(28,1,1,3)
+    }
+    { ButtonWrap Button
+      MoveScaled(36,0,14,3)
+      ToolTip = ("Turn word wrap on/off")
+      Text = ("Word wrap off")
+    }
+    { Panel1 Panel
+      MoveScaled(51,1,5,2)
+      Expand = True
+    }
+    { ToolButtonExit ToolButton
+      MoveScaled(58,0,4,4)
+      ToolTip = ("Quit")
+      Picture = Picture["icon:/huge/quit"]
+    }
+  }
+  { TextEditor1 TextEditor
+    MoveScaled(21,12,14,15)
+    Expand = True
+  }
+}

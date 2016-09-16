@@ -1,0 +1,54 @@
+' Gambas class file
+
+Public Sub Form_Open()
+
+TextEditor1.SetFocus
+
+End
+
+Public Sub ToolButtonCopy_Click()
+
+TextEditor1.Copy
+
+End
+
+Public Sub ToolButtonPaste_Click()
+
+TextEditor1.Paste
+
+End
+
+
+Public Sub ToolButtonSaveAs_Click()
+
+Dialog.Filter = ["*.txt", "Text Files"]
+If Dialog.SaveFile() Then Return
+File.Save(Dialog.Path, TextEditor1.Text)
+
+End
+
+Public Sub ButtonWrap_Click()
+
+If TextEditor1.Wrap = True Then
+  TextEditor1.Wrap = False
+  ButtonWrap.text = "Word wrap off"
+Else
+  TextEditor1.Wrap = True
+  ButtonWrap.text = "Word wrap on"
+Endif
+
+End
+
+Public Sub ToolButtonOpen_Click()
+
+Dialog.Filter = ["*.txt", "Text Files"]
+If Dialog.OpenFile() Then Return
+TextEditor1.text = File.Load(Dialog.Path)
+
+End
+
+Public Sub ToolButtonExit_Click()
+
+Me.Close
+
+End

@@ -1,0 +1,18 @@
+# Gambas Project File 3.0
+# Compiled with Gambas 3.9.0
+Title=Text editor
+Startup=FMain
+Icon=icon.png
+Version=0.0.1
+Component=gb.image
+Component=gb.qt4
+Component=gb.form
+Component=gb.eval
+Component=gb.eval.highlight
+Component=gb.form.dialog
+Component=gb.form.editor
+Description="A simple text editor"
+Authors="Charlie Ogier 2016"
+TabSize=2
+Language=en_US
+Packager=1
